@@ -1,0 +1,186 @@
+body {
+	padding-top: 135px;
+	min-width: 280px;
+}
+
+/* Border TOP&BOTTOM + Background transparent en lien avec le Menu */
+
+.navbar {
+	background-color: transparent;
+	border-bottom: 5px solid #000000;
+	border-top: 25px solid #000000;
+	min-width: 240px;
+}
+
+
+/* Ajuster la HAUTEUR de la Navigation */
+.navbar-default .navbar-header {
+	background: #2E8B57;
+	height: 105px;
+	position: relative;
+}
+
+
+/* FOOD, LCC */
+.navbar-default .navbar-brand {
+	color:  #FFFFFF;
+	font-family: 'Russo One', sans-serif;
+	font-size: 2.5em;
+	height: 105px;
+	line-height: 75px;
+	margin-left: 2vw;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+
+/* Lorsqu'on HOVER sur le Navbar-Brand */
+.navbar-default .navbar-brand:hover {
+	color: #FFFFFF;
+	opacity: 0.5;
+}
+
+
+/* Le TOGGLE button NORMAL, HOVER & FOCUS */
+.navbar-default .navbar-toggle {
+	background-color: #2E8B57;
+	border: 3px solid #FFFFFF;
+	box-shadow: 1px 1px 1.5px #FFFFFF;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+	background-color: rgba(255,255,255, 0.7);
+}
+
+
+/** Les ICONS-BAR en NORMAL, HOVER & FOCUS **/
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #FFFFFF;
+	height: 3px;
+	margin: 2px auto 2px auto;
+}
+
+
+.navbar-default .navbar-toggle:hover .icon-bar, 
+.navbar-default .navbar-toggle:focus .icon-bar  {
+	background-color: #2E8B57;
+}
+
+
+/* Le menu de Navbar-Toggle collapsing  */
+.collapse, .navbar-collapse {
+	background: rgba(253, 253, 253, 0.95);
+}
+
+
+/* Modification des li "Chicken, Beef, Sushi" dans le menu */
+.navbar-default .navbar-nav > li > a {
+	color: #000000;
+	font-family: 'Russo One', sans-serif;
+	font-size: 1.09em;
+	font-style: bold;
+	letter-spacing: 2.5px;
+	padding-top: 11.5px;
+	padding-bottom: 11.5px;
+	text-align: center;
+}
+
+/* Modification des li "Chicken, Beef, Sushi" dans le menu lorsque HOVER & FOCUS*/
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+	color: #2E8B57;
+}
+
+
+/* Modification du Menu dans son ensemble */
+h2.homepage-title {
+	font-size: 30px;
+	font-family: 'Russo One', sans-serif;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	text-shadow: 1px 1px 0.5px #000000;
+}
+
+
+/* Modification du "O" dans le Menu */
+.o {
+	color: #2E8B57;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+
+/* Modification du H3 - Chicken */
+h3.chicken-title {
+	background-color: #2E8B57;
+	border: 2px solid #000000;
+	border-radius: 25px;
+	box-shadow: 1px 1px 1.5px #000000;
+	color: #FFFFFF;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+	display: table;
+	margin: auto;
+	padding: 9px;
+}
+
+
+/* Le Paragraphe à l'intérieur du "Chicken" */
+.chicken p {
+	background-color: rgb(242, 242, 242);
+	color: #000000;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.1em;
+	letter-spacing: 1.9px;
+	margin-top: 17px;
+	padding: 10px;
+	text-align: justify;
+	letter-spacing: 1.9px;
+}
+
+
+
+
+
+
+/* Media Queries */
+/* Changer la couleur de la barre de navigation lorsque le Navbar-Toggle disparaît */
+
+/*Browser MEDIUM */
+@media (min-width: 768px) {
+
+
+	/* Changer la couleur de la barre de navigation lorsque le Navbar-Toggle disparaît */
+	.navbar-default, .container, #bs-example-navbar-collapse-1 {
+		background-color: #2E8B57;
+	}
+}
+
+
+/* Browser Small */
+@media (max-width: 767px) {
+
+
+	/* Petit border noir en haut du Menu */
+.navbar-default .navbar-collapse {
+	border-top: 2px solid #000000;
+}
+}
+
+
+/* Browser Extra-Small */
+@media (max-width: 360px) {
+.navbar-header .navbar-brand {
+	font-size: 1.8em;
+	}
+}
