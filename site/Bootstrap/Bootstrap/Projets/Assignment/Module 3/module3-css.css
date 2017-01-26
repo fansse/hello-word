@@ -105,8 +105,8 @@ body {
 h2.homepage-title {
 	font-size: 30px;
 	font-family: 'Russo One', sans-serif;
-	margin-top: 50px;
-	margin-bottom: 40px;
+	margin-top: 70px;
+	margin-bottom: 60px;
 	text-shadow: 1px 1px 0.5px #000000;
 }
 
@@ -119,8 +119,8 @@ h2.homepage-title {
 }
 
 
-/* Modification du H3 - Chicken */
-h3.chicken-title {
+/* Modification du H3 - Chicken, Beef et Sushi */
+h3.Chicken-title, h3.Beef-title, h3.Sushi-title {
 	background-color: #2E8B57;
 	border: 2px solid #000000;
 	border-radius: 25px;
@@ -135,18 +135,38 @@ h3.chicken-title {
 }
 
 
-/* Le Paragraphe à l'intérieur du "Chicken" */
-.chicken p {
+/* Le Paragraphe à l'intérieur du "Chicken, Beef et Sushi" */
+.Chicken p, .Beef p, .Sushi p {
 	background-color: rgb(242, 242, 242);
 	color: #000000;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 1.1em;
 	letter-spacing: 1.9px;
 	margin-top: 17px;
+	margin-bottom: 30px;
 	padding: 10px;
 	text-align: justify;
 	letter-spacing: 1.9px;
 }
+
+
+/* Le Return Menu en bas du "Chicken, Beef et Sushi" */
+#Return span {
+	color: #2E8B57;
+	display: block;
+	font-weight: bold;
+	margin-top: 20px;
+	text-align: right;
+	text-decoration: none;
+}
+
+
+/* Le Return Menu en bas du "Chicken, Beef et Sushi" lorsque HOVER */
+#Return:hover, #Return span:hover {
+	text-decoration: none;
+}
+
+
 
 
 
